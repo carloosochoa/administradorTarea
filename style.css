@@ -1,0 +1,37 @@
+.jumbotron {
+    background-color: #3498db; 
+    color: white;
+    text-align: center; 
+    height: 50px;
+}
+
+
+.formulario-container {
+    margin-top: 20px;
+}
+
+.table thead tr:first-child{
+    background-color: #3498db; 
+    color: white; 
+}
+
+.añadir-btn {
+    text-align: center; 
+}
+form{
+    margin-bottom: 15px;
+}
+
+.boton-borrar{
+    background-color: red;
+    color: white;
+}
+.boton-modificar{
+    background-color: #3498db;
+    color: white;
+}
+
+.boton-borrar, .boton-modificar{
+    border-radius: 5px 5px;
+    border: none;
+}
