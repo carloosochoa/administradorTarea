@@ -22,8 +22,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="estimado">Tiempo estimado de trabajo</label>
-                    <input type="text" class="form-control" id="estimado" required>
+                    <label for="estimado">Tiempo estimado de trabajo(minutos)</label>
+                    <input type="number" class="form-control" id="estimado" required>
                 </div>
 
                 <div class="form-group">
@@ -47,13 +47,25 @@
 
                 <button type="submit" class="btn btn-success">Añadir tarea</button>
             </form>
+            <div class="ordenacion">
+                <div class="izquierda">
+                    <p>Ordenar descendente</p>
+                    <a onclick="estimadoDESC()" id="estimadoDESC">Tiempo estimado</a>
+                    <a onclick="finalizacionDESC()">Fecha máx. finalización</a>
+                </div>
+                <div class="derecha">
+                    <p>Ordenar ascendente</p>
+                    <a onclick="estimadoASC()">Tiempo estimado</a>
+                    <a onclick="finalizacionASC()">Fecha máx. finalizacion</a>
+                </div>
+            </div>
         </div>
         <table class="table">
             <thead class="cabecera">
                 <tr>
                     <th>Nombre</th>
-                    <th>Tiempo estimado</th>
-                    <th>Fecha máx. finalización</th>
+                    <th><a onclick="ordenarDESC()" id="ordenarDESC">Tiempo estimado(DESC)</a></th>
+                    <th><a onclick="ordenarASC()" id="ordenarASC">Fecha máx. finalización(ASC)</a></th>
                     <th>Fecha de alta</th>
                     <th>Estado</th>
                     <th>Modificar</th>
